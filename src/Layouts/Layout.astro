@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 const {slot: mainSlot, styleSlot} = Astro.slots;
+const {Title = "Home"} = Astro.props;
 ---
 
 
@@ -11,7 +12,7 @@ const {slot: mainSlot, styleSlot} = Astro.slots;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
         <slot name="styleSlot"/>
-		<title>Blog</title>
+		<title>{ Title }</title>
 	</head>
 	<body>
         
