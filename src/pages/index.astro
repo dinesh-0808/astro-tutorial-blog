@@ -1,8 +1,15 @@
 ---
+import Header from "../components/Header.astro"
 import Layout from "../Layouts/Layout.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <Layout>
+	<Header/>
 	<h1>my first Astro Site</h1>
+	<Footer/>
+	<script>
+		import "../scripts/menu.js";
+	</script>
 </Layout>
 
